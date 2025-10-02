@@ -4,10 +4,9 @@ services:
     container_name: windows
     environment:
       VERSION: "7u"
-    DISK_SIZE: "256G"  
     devices:
-      - /dev/kvm
-      - /dev/net/tun
+    - /dev/kvm
+    - /dev/net/tun
     cap_add:
       - NET_ADMIN
     ports:
